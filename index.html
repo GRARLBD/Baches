@@ -109,53 +109,55 @@
     </div>
     <!-- Carousel End -->
 
-   <!-- Parametros inicio -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item text-center pt-3 h-100">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-user text-primary mb-4"></i>
-                        <h5 class="mb-3">Usuarios</h5>
-                        <p>Nuestros usuarios son la clave para identificar y reportar baches, asegurando calles más
-                            seguras para todos.</p>
+    <!-- Parametros inicio -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3 h-100">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                            <h5 class="mb-3">Usuarios</h5>
+                            <p>Nuestros usuarios son la clave para identificar y reportar baches, asegurando calles más
+                                seguras para todos.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item text-center pt-3 h-100">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-map-pin text-primary mb-4"></i>
-                        <h5 class="mb-3">Baches reportados</h5>
-                        <p>Cada bache reportado nos ayuda a mantener un registro actualizado y priorizar las
-                            reparaciones necesarias.</p>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3 h-100">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-map-pin text-primary mb-4"></i>
+                            <h5 class="mb-3">Baches reportados</h5>
+                            <p>Cada bache reportado nos ayuda a mantener un registro actualizado y priorizar las
+                                reparaciones necesarias.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item text-center pt-3 h-100">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-users text-primary mb-4"></i>
-                        <h5 class="mb-3">Comunidad única</h5>
-                        <p>Formamos una comunidad única donde cada miembro contribuye a mejorar la seguridad vial de
-                            nuestra ciudad.</p>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3 h-100">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-users text-primary mb-4"></i>
+                            <h5 class="mb-3">Comunidad única</h5>
+                            <p>Formamos una comunidad única donde cada miembro contribuye a mejorar la seguridad vial de
+                                nuestra ciudad.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item text-center pt-3 h-100">
-                    <div class="p-4">
-                        <i class="fa fa-3x fa-map-marker text-primary mb-4"></i>
-                        <h5 class="mb-3">Mapa Interactivo de Baches</h5>
-                        <p>Explora nuestro mapa interactivo donde puedes encontrar marcadores de baches reportados por nuestra comunidad. Haz clic en cada marcador para ver más detalles y la imagen correspondiente del bache.</p>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3 h-100">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-map-marker text-primary mb-4"></i>
+                            <h5 class="mb-3">Mapa Interactivo de Baches</h5>
+                            <p>Explora nuestro mapa interactivo donde puedes encontrar marcadores de baches reportados
+                                por nuestra comunidad. Haz clic en cada marcador para ver más detalles y la imagen
+                                correspondiente del bache.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Parametros final -->
+    <!-- Parametros final -->
 
 
     <!-- MAPA inicio -->
@@ -201,16 +203,19 @@
         <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- modal-xl para un modal extra grande -->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="markerModalLabel">Información del Marcador</h5>
+                    <h5 class="modal-title" id="markerModalLabel">Información del Marcador(Bache reportado)</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-6 text-center">
-                            <img id="modalImage" src="" class="img-fluid" style="width: 100%;" alt="Imagen del Marcador">
+                            <img id="modalImage" src="" class="img-fluid" style="width: 100%;"
+                                alt="Imagen del Marcador">
                         </div>
                         <div class="col-md-6">
-                            <h5 id="modalLocation" class="text-center">Ubicación del Bache</h5>
+                            <h5>Ubicación: </h5>
+                            <h4 id="modalLocation" class="text-center">Ubicación del Bache</h5>
+                                <h5>Descripcion: </h5>
                             <p id="modalDescription" class="text-center">Descripción del bache</p>
                         </div>
                     </div>
@@ -221,8 +226,8 @@
             </div>
         </div>
     </div>
-    
-    
+
+
 
 
 
@@ -362,18 +367,22 @@
 
                     const objetoBache = {
                         id: bache.id,
-                        titulo: bache.titulo,
+                        descripcion: bache.descripcion,
                         latitud: bache.latitud,
                         longitud: bache.longitud,
-                        fotoBase64: bache.foto // Suponiendo que 'foto' es una cadena base64
+                        fotoBase64: bache.foto ,
+                        location: bache.ubicacion// Suponiendo que 'foto' es una cadena base64
                     };
 
                     var marker = L.marker([objetoBache.latitud, objetoBache.longitud]).addTo(markerLayer);
-                    //const blob = base64ToBlob(objetoBache.fotoBase64, 'image/jpeg'); // Ajusta el tipo de contenido según tu cadena Base64
 
-                    // Agregar evento clic para mostrar el modal con la imagen
                     marker.on('click', function () {
                         document.getElementById('modalImage').src = "data:image/jpeg;base64," + objetoBache.fotoBase64;
+                        // Establecer la ubicación en el modal
+                        document.getElementById('modalLocation').textContent = objetoBache.location;
+
+                        // Establecer la descripción en el modal
+                        document.getElementById('modalDescription').textContent = objetoBache.descripcion;
                         var markerModal = new bootstrap.Modal(document.getElementById('markerModal'), { backdrop: 'static' });
                         markerModal.show();
                     });
@@ -387,7 +396,7 @@
             console.error('Error al obtener datos de baches:', error);
         });
 
-       
+
 
     </script>
 
